@@ -10,6 +10,11 @@ app.use(express.json());
 
 const PORT = 8080;
 app.listen(PORT, () => console.log(`This app is running on port ${PORT}`));
+<<<<<<< HEAD
+=======
+
+console.log(`success 3, probably`);
+>>>>>>> 29854b8768f4623e7837d50570a4ceb02416fceb
 
 app.post("/message", (req, res) => {
     const newMessage = req.body.userEntry;
@@ -19,6 +24,7 @@ app.post("/message", (req, res) => {
         [newMessage.name, newMessage.message]
     );
     res.json({status: "success", values: newMessage});
+    console.log(`Success 4, probably`);
 });
 
 app.get('/readMessages', async (req, res) => {
