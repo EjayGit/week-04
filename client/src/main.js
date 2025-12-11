@@ -5,7 +5,7 @@ function eventHandler(submitEvent){
   const formData = new FormData(userForm);
   const userEntry = Object.fromEntries(formData);
   console.log("Success 1, probably");
-  fetch('http://localhost:8080/message',{
+  fetch('https://week-04-server.onrender.com/message',{
     method: "POST",
     headers: {
       "Content-Type": "application/json",
