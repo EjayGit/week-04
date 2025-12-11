@@ -19,7 +19,7 @@ userForm.addEventListener('submit', eventHandler);
 
 async function getData(){
   try{
-    const response = await fetch('http://localhost:8080/readMessages');
+    const response = await fetch('https://week-04-server.onrender.com/readMessages');
     if (!response.ok){
       throw new Error(`Response status: ${response.status}`);
     }
