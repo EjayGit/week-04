@@ -1,6 +1,6 @@
 import { db } from './dbConnection.js';
 import cors from "cors";
-import express, { response } from "express";
+import express from "express";
 
 const app = express();
 
@@ -11,9 +11,9 @@ app.use(express.json());
 const PORT = 8080;
 app.listen(PORT, () => console.log(`This app is running on port ${PORT}`));
 
-app.post("/message", (req, res) => {
+app.post("/message", async (req, res) => {
     const newMessage = req.body.userEntry;
-    const query = db.query(
+    const query = await db.query(
         `INSERT INTO messageboard (name, message) VALUES ($1, $2)`,
         [newMessage.name, newMessage.message]
     );
