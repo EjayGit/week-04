@@ -13,19 +13,37 @@ db.query(
     message TEXT
 )`);
 
+db.query(
+    `INSERT INTO messageboard (name, message) VALUES ($1, $2)`, [
+    `Erik`,
+    `Hello there, its me..!`
+    ]
+);
 
-// db.query(
-// `CREATE TABLE IF NOT EXISTS messages(
-//     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
-//     msg_name TEXT,
-//     content TEXT
-// )`);
+db.query(
+    `INSERT INTO messageboard (name, message) VALUES ($1, $2)`, [
+    `Andrew`,
+    `Hello Andrew`
+    ]
+);
 
+db.query(
+    `INSERT INTO messageboard (name, message) VALUES ($1, $2)`, [
+    `Andy`,
+    `Hello`
+    ]
+);
 
-// db.query(
-//     `INSERT INTO messageboard (name, message) VALUES ($1, $2)`, [
-//     `my name`,
-//     `What a lovely day it is today. Everything is going really well.`
-//     ]
-// );
+db.query(
+    `INSERT INTO messageboard (name, message) VALUES ($1, $2)`, [
+    `Erik`,
+    `Hello, what a wonderful day!`
+    ]
+);
 
+db.query(
+    `INSERT INTO messageboard (name, message) VALUES ($1, $2)`, [
+    `Bertie`,
+    `Hello, oh no, its cold outside!`
+    ]
+);
