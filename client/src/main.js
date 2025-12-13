@@ -49,4 +49,3 @@ async function getData(){
 }
 
 getData();
-// render data using DOM elements, one per piece of data.
