@@ -1,5 +1,3 @@
-MDN fetch for help with fetch GET code.
-
 # Week-04 Assignment
 
 ## Summary
@@ -29,3 +27,16 @@ This week you’re going to make a ‘Guestbook’, like the ones in hotels, for
         .
     🏹 Create an option for users to like others’ posts.
         .
+
+## Writing the code
+
+I used a number of sources to help the code: being
+- MDN for help with GET code for main.js.
+- MDN for help with try-catch statements.
+- Moodle for help with GET/POST statements for server.js and POST for main.js.
+- Demo for help with GET/POST statements for server.js.
+The rest and piecing it together, I did.
+
+## Debugging
+
+I used a number of different techniques, from inserting console.error messages into the code, asking for help, and asking chatGPT for help with error codes. ChatGPT was actually of little help in this assignment as it did not recognise that I had inserted the client url into the main.js script and so misled me to think my error was in my server.js. I eventually isolated the bug to be in my main.js, and then looked at the only connecting feature in there, the url, and it dawned on me there were 2 options, not one. I then realised what I had done and why the errors were pointing at server.js, and why the data was not being fetched. 
