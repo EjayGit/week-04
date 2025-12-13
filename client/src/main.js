@@ -53,3 +53,10 @@ function eventHandler(submitEvent){
 }
 
 userForm.addEventListener('submit', eventHandler);
+
+
+//=================================================
+//Audio
+const audioControl = document.getElementById('audio');
+audioControl.volume = 0.05;
+audioControl.play();
