@@ -24,7 +24,7 @@ This week you’re going to make a ‘Guestbook’, like the ones in hotels, for
     🏹 Style the page excellently, for example, by adding extra UX considerations or animations.
         - Submit button jumps out when hover, and depresses on active.
     🏹 Add a delete button to each message and a DELETE route in the server.
-        .
+        Completed with button refresh included for delete and submit.
     🏹 Create an option for users to like others’ posts.
         .
 
@@ -35,6 +35,8 @@ I used a number of sources to help the code: being
 - MDN for help with try-catch statements.
 - Moodle for help with GET/POST statements for server.js and POST for main.js.
 - Demo for help with GET/POST statements for server.js.
+- Stackoverflow and dev.to for the delete method.
+- Geeks for geeks for multiple lines of json for json.stringify().
 The rest and piecing it together, I did.
 
 ## Debugging

@@ -26,11 +26,19 @@ app.post("/message", async (req, res) => {
 
 app.get('/readMessages', async (req, res) => {
     try{
-        const query = await db.query(`SELECT name, message FROM messageboard;`);
-        console.log("db returned: ", query.rows);
+        const query = await db.query(`SELECT id, name, message FROM messageboard;`);
         res.json(query.rows);
     } catch(error){
         console.log("db error: ", error);
         res.status(500).json({Error: error.message});
+    }
+})
+
+app.delete('/:id', async (req, res) => {
+    try{    
+        const objRow = req.params.id;
+        const query = await db.query(`DELETE FROM messageboard WHERE id = ${objRow}`)
+    } catch (error){
+        console.error(`Error Message line 43: ${error.message}`);
     }
 })
