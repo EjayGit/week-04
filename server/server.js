@@ -27,8 +27,10 @@ app.post("/message", async (req, res) => {
 app.get('/readMessages', async (req, res) => {
     try{
         const query = await db.query(`SELECT name, message FROM messageboard;`);
+        console.log("db returned: ", query.rows);
         res.json(query.rows);
     } catch(error){
+        console.log("db error: ", error);
         res.status(500).json({Error: error.message});
     }
 })
