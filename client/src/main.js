@@ -4,7 +4,7 @@ function eventHandler(submitEvent){
   submitEvent.preventDefault();
   const formData = new FormData(userForm);
   const userEntry = Object.fromEntries(formData);
-  fetch('https://week-04-52tf.onrender.com/message',{
+  fetch('https://week-04-server.onrender.com/message',{
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -19,7 +19,7 @@ userForm.addEventListener('submit', eventHandler);
 
 async function getData(){
   try{
-    const response = await fetch('https://week-04-52tf.onrender.com/readMessages');
+    const response = await fetch('https://week-04-server.onrender.com/readMessages');
     if (!response.ok){
       throw new Error(`Response status: ${response.status}`);
     }
