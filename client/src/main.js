@@ -1,22 +1,5 @@
 const userForm = document.getElementById('user-form');
 
-function eventHandler(submitEvent){
-  submitEvent.preventDefault();
-  const formData = new FormData(userForm);
-  const userEntry = Object.fromEntries(formData);
-  fetch('https://week-04-server.onrender.com/message',{
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({userEntry}),
-  });
-}
-
-userForm.addEventListener('submit', eventHandler);
-
-// ====================================================
-
 async function getData(){
   try{
     const response = await fetch('https://week-04-server.onrender.com/readMessages');
@@ -49,3 +32,24 @@ async function getData(){
 }
 
 getData();
+
+//======================================================
+
+function eventHandler(submitEvent){
+  try{
+    submitEvent.preventDefault();
+    const formData = new FormData(userForm);
+    const userEntry = Object.fromEntries(formData);
+    fetch('https://week-04-server.onrender.com/message',{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({userEntry}),
+    });
+  } catch(error){
+    console.error(error.message);
+  }
+}
+
+userForm.addEventListener('submit', eventHandler);
