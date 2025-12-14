@@ -27,9 +27,9 @@ This week you’re going to make a ‘Guestbook’, like the ones in hotels, for
     🏹 Style the page excellently, for example, by adding extra UX considerations or animations.
         - Submit button jumps out when hover, and depresses on active.
     🏹 Add a delete button to each message and a DELETE route in the server.
-        Completed with button refresh included for delete and submit.
+        Completed with page refresh included for delete and submit button clicks.
     🏹 Create an option for users to like others’ posts.
-        .
+        Not attempted.
 
 ## Writing the code
 
