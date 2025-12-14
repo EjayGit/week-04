@@ -45,3 +45,11 @@ The rest and piecing it together, I did.
 ## Debugging
 
 I used a number of different techniques, from inserting console.error messages into the code, asking for help, and asking chatGPT for help with error codes. ChatGPT was actually of little help in this assignment as it did not recognise that I had inserted the client url into the main.js script and so misled me to think my error was in my server.js. I eventually isolated the bug to be in my main.js, and then looked at the only connecting feature in there, the url, and it dawned on me there were 2 options, not one. I then realised what I had done and why the errors were pointing at server.js, and why the data was not being fetched. 
+
+## What went well
+
+Other than spending half a day finding a url bug by me typing the wrong url into the fetch methods, the project went really well. I used version control and used branches such as my delete and get branches for major features prior to deployment. During this process I also learnt a lot about git branches and the issues you can get when saving files when having already added files to commit. These were some very interesting issues to solve that required rebasing the files as I got them 'all in a bit of a pickle' at one point.
+
+## What could have gone better
+
+Although I have got some successful experience in writing POST, GET and DELETE endpoints now, I still feel underconfident in this, and will be relying on these for templates in the near future. I would like to become proficient in writing these without assistance in future.
