@@ -44,7 +44,13 @@ The rest and piecing it together, I did.
 
 ## Debugging
 
-I used a number of different techniques, from inserting console.error messages into the code, asking for help, and asking chatGPT for help with error codes. ChatGPT was actually of little help in this assignment as it did not recognise that I had inserted the client url into the main.js script and so misled me to think my error was in my server.js. I eventually isolated the bug to be in my main.js, and then looked at the only connecting feature in there, the url, and it dawned on me there were 2 options, not one. I then realised what I had done and why the errors were pointing at server.js, and why the data was not being fetched. 
+I used a number of different techniques, from inserting console.error messages into the code, asking for help, and asking chatGPT for help with error codes. ChatGPT was actually of little help in this assignment as it did not recognise that I had inserted the client url into the main.js script and so misled me to think my error was in my server.js. I eventually isolated the bug to be in my main.js, and then looked at the only connecting feature in there, the url, and it dawned on me there were 2 options, not one. I then realised what I had done and why the errors were pointing at server.js, and why the data was not being fetched.
+
+## Security
+
+- Sucuri: Low security risk
+    ❌ No website security monitoring detected.
+    ✅ Website firewall detected.
 
 ## What went well
 
