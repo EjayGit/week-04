@@ -1,5 +1,8 @@
 # Week-04 Assignment
 
+## Important note!
+The server takes a minute to warm up after your initial request. Please be patient and refresh after a minute of submitting your first message. When you can see the message below the message board heading, you can be sure that the server is functioning properly from this point. 
+
 ## Summary
 This week you’re going to make a ‘Guestbook’, like the ones in hotels, for users to leave a message for other users. 
 
@@ -30,7 +33,7 @@ This week you’re going to make a ‘Guestbook’, like the ones in hotels, for
 
 ## Writing the code
 
-I used a number of sources to help the code: being
+I used a number of sources to help the code:
 - MDN for help with GET code for main.js.
 - MDN for help with try-catch statements.
 - Moodle for help with GET/POST statements for server.js and POST for main.js.
