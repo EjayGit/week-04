@@ -95,3 +95,20 @@ form button:active{
 .delBtn:active{
     scale: 1;
 }
+
+.likeBtn{
+    margin: 10px;
+    padding: 3px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(197, 197, 197);
+    border-radius: 5px;
+    border: 2px ridge darkslategrey;
+}
+
+.likeBtn:hover{
+    scale: 1.05;
+}
+
+.likeBtn:active{
+    scale: 1;
+}

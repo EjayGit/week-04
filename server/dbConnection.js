@@ -10,5 +10,6 @@ db.query(
 `CREATE TABLE IF NOT EXISTS messageboard(
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY,
     name VARCHAR(255),
-    message TEXT
+    message TEXT,
+    likes INT
 )`);
